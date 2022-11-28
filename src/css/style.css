@@ -1,12 +1,25 @@
-body {
-    color: rgb(7, 2, 37);
-    background-color: rgb(236, 242, 245);
-}
-
-* {
+body,* {
+    font-family: -apple-system, BlinkMacSystemFont, "Bradley Hand", cursive;
+    font-size: 15px;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
+button {
+    cursor: pointer;
+    padding: 3px;
+}
+
+button:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+textarea, input{
+    border-radius: 7px;
+    border: solid 1px grey;
+    
+}
 .container {
     margin: 20px;
     width: 1200px;
@@ -47,9 +60,7 @@ body {
     background-color: #fff;
 }
 
-.add-btn:hover {
-    background-color: rgb(236, 206, 206);
-}
+
 
 .modal {
     position: fixed;
@@ -74,17 +85,24 @@ body {
 
 .modal-title {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 label {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     padding: 5px;
     width: 350px;
 }
 
 .btn-box {
     margin-top: 10px;
+}
+
+.cancel-btn , .ok-btn{
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 7px;
 }
 
 .delete-modal {
